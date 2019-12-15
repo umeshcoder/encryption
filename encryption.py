@@ -8,10 +8,10 @@ def browse():
     try:
         global filename
         # filename=filedialog.askopenfile(initialdir="/r",title="Select File",filetypes=("image files",".jpg"))
-        filename = filedialog.askopenfilename(initialdir="/root/Desktop",filetypes=(("png files","*.png"),("jpg files","*.jpg"),("jpeg files","*.jpeg")))
+        filename = filedialog.askopenfilename(initialdir="C:/Users/User/Desktop/tour",filetypes=(("png files","*.png"),("jpg files","*.jpg"),("jpeg files","*.jpeg")))
         path = filename
     except:
-        print("something went wrong")
+        print("Invalid input")
 
 def final_encryption(path,message):
     p=path
